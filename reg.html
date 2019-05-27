@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head><title>New User Registration</title>
+  </head>
+  		<body>
+  			<fieldset>
+  			      <legend>Alumni Registration</legend>
+  			      <pre>
+  			      	  <form action="reg.php" method="post" enctype='multipart/form-data' onsubmit=" return validate(this)">
+  			      	  ID Number:       <input type="text" name="id_number" id="id_number">
+  			      	  Admission Number:<input type="text" name="adm_no" id="adm_no">
+  			      	  Name:	  <input type="text" name="name" id="name">
+  			      	  Date of Birth:   <input type="text" name="date_of_birth" id="date_of_birth">
+  			      	  Telephone Number:<input type="text" name="tel_no" id="tel_no">
+  			      	  Email:           <input type="mail" name="email" id="email">
+  			      	  County:          <input type="text" name="county" id="county">
+  			      	  <!--Photofile:	   <input type="text" name="photo_file_name" id="photo_file_name"> -->
+  			      	  BIO:             <input type="textarea" name="bio" id="bio">
+  			      	  Username:        <input type="text" name="username" id="username">
+  			      	  Password:        <input type="password" name="password" id="password">
+
+  			      	  Upload your photo:<input type="file" name="photo_upload" id="photo_upload">
+  			      	  Upload your CV:   <input type="file" name="cvupload" id="cvupload">
+  			      	  				    <input type="submit" value="Submit">
+  			      	  				    <script src="/validate.js"></script>
+  			      	  				    <noscript>Javascript disabled in your browser</noscript>
+
+  			      	  </form>
+  			     </pre>
+  			</fieldset>
+  		</body>
+  	</html>

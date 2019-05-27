@@ -1,0 +1,42 @@
+HTML5 ENHANCEMENTS
+
+THE AUTOCOMPLETE ATTRIBUTE
+This enables previous user inputs to be recalled and automatically entered into fields as suggestions.
+ Implemention in code
+   <form action="myform.php" method="post" autocomplete="on">
+	<input type="text" name="username">
+	<input type="password" name="password" autocomplete="off"> 
+   </form>
+
+THE AUTOFOCUS ATTRIBUTE
+Gives immediate focus to an element when a page loads.It cn be applied to any <input>,<textarea> or <button> element,like this:
+	<input type="text" nme="query" autofocus="autofocus">
+
+THE REQUIRED ATTRIBUTE
+Ensures that a field has been completed before a form is submitted.Use it like this:
+
+	<input type="text" name="creditcard" required="required">
+
+OVERRIDE ATTRIBUTES 
+Here you can override form settings on an element-by-element basis.
+E.g
+	<form action="url1.php" method="post">
+	    <input type="text" name="field">
+	    <input type="submit" formaction="url2.php">
+	</form>
+
+The 2nd form action overrides the first and submits the form to a different url other than the one specified in the first url.
+
+THE COLOR INPUT TYPE
+This calls up a color picker so that you can simply click the color of your choice.You use like this;
+  Choose a color<input type="color" name="color">
+
+THE NUMBER AND RANGE INPUT TYPES
+These input types restrict input to a number,and also specify an allowed range like this:
+   <input type="number" name"age">
+   <input type="range" name="num" min="0" value="50" step="1">
+
+DATE AND TIME PICKERS
+When you choose an input type of date,month,week,time,datetime or datetime-local,a picker will pop on supported browsers from which the user can make a selection like this one,which inputs the time:
+  <input type="time" name="time" value="12:34">
+
